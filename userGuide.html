@@ -1,0 +1,215 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Anamorpheus</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		 <script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----font-Awesome----->
+   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+   		<!----font-Awesome----->
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!---- Slider ------>
+	 <link rel="stylesheet" href="css/slider.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+	<script type="text/javascript">
+			$(function() {
+
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+
+				$('#da-slider1').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+
+			});
+		</script>
+</head>
+	<body>
+		<!-----start-top-header----->
+		<div id="hello" class="top-header">
+		<!-- Slideshow 4 -->
+
+			<!---- //End-slider----->
+		<!-----start-conatiner---->
+		<div class="container">
+			<!-----start-header---->
+			<div class="header" id="top">
+				<div class="container">
+				<div class="logoUserGuide">
+					<img src="images/logoSmall.png" /><a href="index.html">anamorpheus</a>
+				</div>
+				<!----start-top-nav---->
+
+
+				<div class="clear"> </div>
+			</div>
+			<!-----//End-header---->
+			</div>
+			<!-----start-top-header----->
+		</div>
+		</div>
+		<!-----//End-features----->
+		<!-----start-Share instantly----->
+		<div id="information" class="Share-instantly">
+
+			<div class="container">
+				<div class="col-md-5 Share-instantly-left screen1">
+					<span> </span>
+				</div>
+				<div class="col-md-7 Share-instantly-right">
+					<h3>Etape 1 : Choix de la source vidéo</h3>
+					<p class="head-para">Deux possibilités s'offrent à vous : </br>
+						- Sélectionner une vidéo déjà existante depuis la galerie de votre téléphone </br>
+						- Enregistrer une nouvelle vidéo
+					</p>
+
+
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="col-md-7 Share-instantly-right">
+					<h3>Etape 2 : Prévisualisez votre vidéo</h3>
+					<p class="head-para">Pour être sûr de votre choix, une visualisation de la vidéo se lance automatiquement.</p>
+				</div>
+				<div class="col-md-5 feature-right screen2">
+					 <span> </span>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="col-md-5 Share-instantly-left screen3">
+					<span> </span>
+				</div>
+				<div class="col-md-7 Share-instantly-right">
+					<h3>Etape 3 : Choix du type d'anamorphose</h3>
+					<p class="head-para">Après avoir validé votre vidéo, il est temps de choisir le type d'anamorphose que vous souhaitez créer. </br>
+					</p>
+
+
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="col-md-7 Share-instantly-right">
+					<h3>Etape 4 : Générez votre anamophose</h3>
+					<p class="head-para">Une fois la direction sélectionnée, il vous reste qu'à attendre pour obtenir votre anamorphose ! </br>
+					Vous pouvez télécharger et partager l'anamorphose une fois finie.</p>
+				</div>
+				<div class="col-md-5 feature-right screen4">
+					 <span> </span>
+				</div>
+			</div>
+
+			<div class="clearfix"> </div>
+
+		</div>
+
+		</div>
+
+		</div>
+
+
+		<!-----start-footer----->
+		<div class="footer">
+			<div class="container">
+				<div class="col-md-7 footer-left">
+					<p><b>Tous droits réservés à Anamorpheus.</b> Développé par Alos Mickaël, Collot Kevin, Guilbault Maxime & Houdayer Corentin.</p>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+			<a href="#top" id="toTop" style="display: block;" class="page-scroll"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			<!---- start-smoth-scrolling---->
+			<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+					});
+			</script>
+			<!---- //End-smoth-scrolling---->
+		</div>
+		<!-----//End-footer----->
+		<!-----//End-conatiner---->
+	</body>
+</html>

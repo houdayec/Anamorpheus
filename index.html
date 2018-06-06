@@ -1,0 +1,379 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+Redisigned by : Corentin Houdayer : http://corentin-houdayer.com
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Anamorpheus</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		 <script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----font-Awesome----->
+   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+   		<!----font-Awesome----->
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+							timeout: 1000,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!---- Slider ------>
+	 <link rel="stylesheet" href="css/slider.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+	<script type="text/javascript">
+			$(function() {
+
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+
+				$('#da-slider1').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+
+			});
+		</script>
+</head>
+	<body>
+		<!-----start-top-header----->
+		<div id="hello" class="top-header">
+		<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>Créez</h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class="apple" href="#"><span> </span></a>
+			          			<a class="play-btn" target="_blank" href="https://play.google.com/store/apps/details?id=fi.corentin.app"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>votre</h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class="apple" href="#"><span> </span></a>
+			          			<a class="play-btn" target="_blank" href="https://play.google.com/store/apps/details?id=fi.corentin.app"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+			          		<h1>anamorphose</h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class="apple" href="#"><span> </span></a>
+			          			<a class="play-btn" target="_blank" href="https://play.google.com/store/apps/details?id=fi.corentin.app"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clear"> </div>
+			<!---- //End-slider----->
+		<!-----start-conatiner---->
+		<div class="container">
+			<!-----start-header---->
+			<div class="header">
+				<div class="container">
+				<div class="logo">
+					<img src="images/logoSmall.png" /><a href="#">anamorpheus</a>
+				</div>
+				<!----start-top-nav---->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#hello" class="scroll">Accueil</a></li>
+						<li class="page-scroll"><a href="#over" class="scroll">Pourquoi ?</a></li>
+						<li class="page-scroll"><a href="#share" class="scroll">Guide</a></li>
+						<li class="page-scroll"><a href="#fea" class="scroll">Doc technique</a></li>
+						<li class="page-scroll"><a href="#gall" class="scroll">Captures d'écran</a></li>
+						<li class="contatct-active" class="page-scroll"><a href="#down" class="scroll">Téléchargement</a></li>
+						<!--<li class="page-scroll"><a href="#comp" class="scroll">Compatibility</a></li>-->
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				  </nav>
+
+				<div class="clear"> </div>
+			</div>
+			<!-----//End-header---->
+			</div>
+			<!-----start-top-header----->
+		</div>
+		</div>
+		<!-----start-features----->
+		<div id="over" class="features text-center">
+			<div class="container">
+				<h2>Pourquoi Anamorpheus ?</h2>
+				<!---- start-features-grids------>
+					<div class="features-grids text-center">
+						<div class="col-md-4 features-grid">
+							<span> </span>
+							<h3><a href="#">Simple</a></h3>
+							<p>Générez une anamorphose en seulement 3 étapes.</p>
+						</div>
+						<div class="col-md-4 features-grid">
+							<span class="t-icon1"> </span>
+							<h3><a href="#">Personnalisé</a></h3>
+							<p>Choisissez vous-même votre direction d'anamorphose.</p>
+						</div>
+						<div class="col-md-4 features-grid">
+							<span class="t-icon2"> </span>
+							<h3><a href="#">Rapide</a></h3>
+							<p>Quelque soit la qualité de votre vidéo, votre anamorphose est générée en moins de 30 secondes.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				<!---- //End-features-grids------>
+			</div>
+		</div>
+		<!-----//End-features----->
+		<!-----start-Share instantly----->
+		<div id="share" class="Share-instantly indexImagesShare">
+			<div class="container">
+				<div class="col-md-5 Share-instantly-left">
+					<span> </span>
+				</div>
+				<div class="col-md-7 Share-instantly-right">
+					<h3>Guide utilisateur</h3>
+					<a href="userGuide.html"><p class="head-para"><img src="images/business.png" style="margin-right:1vw" width=128px height=128px/>Cliquez ici pour accéder au guide utilisateur.</a><br/><br/>
+					<!----- start-Share-instantly-slider---->
+					 <!-- Prettify -->
+						<link href="css/owl.carousel.css" rel="stylesheet">
+					    <script src="js/owl.carousel.js"></script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo , #owl-demo1").owlCarousel({
+						        items : 1,
+						        lazyLoad : true,
+						        autoPlay : true,
+						      });
+						    });
+					    </script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo3").owlCarousel({
+						        items : 4,
+						        lazyLoad : true,
+						        autoPlay : true,
+						        navigation: false,
+						        pagination: false,
+						      });
+						    });
+					    </script>
+					<!----- //End-Share-instantly-slider---->
+					<!-- start content_slider -->
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+		<!-----//End-Share instantly----->
+		<!-----start-New Feature------>
+		<div id="fea" class="feature">
+			<div class="container">
+				<div class="col-md-7 feature-left">
+					<h3>Documentation technique</h3>
+					<p class="head-para">Retrouvez toutes les spécifications techniques d'Anamorpheus. </br> Conception, choix, explications ...</p>
+					 <a target="_blank" href="https://github.com/houdayec/M1DAPM_FinalProjet"><img src="images/gitHub.png" id="logoGitHub"/></a>
+				</div>
+				<div class="col-md-5 feature-right indexImagesFeature">
+					 <span> </span>
+				</div>
+			</div>
+		</div>
+		<!-----//End-New Feature------>
+		<!----- start-gallery----->
+		<div id="gall" class="gallery">
+			<div class="container">
+				<h3>Captures d'écrans</h3>
+				<p>A quoi ressemble Anamorpheus ?</p>
+			</div>
+			<div id="owl-demo3" class="owl-carousel owl-carousel2">
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/screenshots/sc1.png" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Ecran d'accueil</span></p>
+				                </div>
+				                 <div class="item">
+				                	<img class="lazyOwl" data-src="images/screenshots/sc2.png" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Choix d'anamorphose</span></p>
+				                </div>
+
+				                 <div class="item">
+				                	<img class="lazyOwl" data-src="images/screenshots/sc4.png" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Cas : Anamorphose personnalisée</span></p>
+				                </div>
+
+				                 <div class="item">
+				                	<img class="lazyOwl" data-src="images/screenshots/sc6.png" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Génération anamorphose</span></p>
+				                </div>
+				                </div>
+				                <div class="clearfix"> </div>
+
+			           </div>
+		</div>
+		<!----- //End-gallery----->
+		<!-----start-download---->
+		<div id="down" class="download">
+			<div class="container">
+				<div class="col-md-5 download-left">
+					<a href="#"><span> </span></a>
+				</div>
+				<div class="col-md-7 download-right">
+					<p>Avec Anamorpheus,</br> donnez une nouvelle vie </br> à vos vidéos.</p>
+					<a href="#">- Projet créé dans le cadre du Master 1 DAPM.</a>
+					<ul class="list-unstyled list-inline">
+						<li><a class="l-apple" href="#"><span> </span></a></li>
+						<li><a class="l-google" target="_blank" href="https://play.google.com/store/apps/details?id=fi.corentin.app"><span> </span></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-----//End-download---->
+
+		<!-----start-footer----->
+		<div class="footer">
+			<div class="container">
+				<div class="col-md-7 footer-left">
+					<p><b>Tous droits réservés à Anamorpheus.</b> Développé par Alos Mickaël, Collot Kevin, Guilbault Maxime & Houdayer Corentin.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<a href="#top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			<!---- start-smoth-scrolling---->
+			<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+					});
+			</script>
+			<script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '180',
+          width: '320',
+          videoId: 'YkZX-F0DlpE',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+			<!---- //End-smoth-scrolling---->
+		</div>
+		<!-----//End-footer----->
+		<!-----//End-conatiner---->
+	</body>
+</html>

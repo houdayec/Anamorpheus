@@ -459,7 +459,7 @@ nav a#pull {
 
 .Share-instantly-left span{
 	width:350px;
-	height:516px;
+	height:616px;
 	display:block;
 }
 .indexImagesShare span{
@@ -473,6 +473,7 @@ nav a#pull {
 .Share-instantly-right p{
 	color: #AEAEAE;
 	line-height: 1.8em;
+  font-size: 1.5em;
 }
 .Share-instantly-right a{
 	color : white;
@@ -1088,7 +1089,7 @@ p.cousel_demo{
   margin-top: 15px
 }
 .logoUserGuide a{
-	color: #16a085;
+	color: white;
 	font-weight: 700;
 	font-size: 2.5em;
 }
